@@ -1,6 +1,7 @@
 package com.gamelist.dto;
 
 import com.gamelist.entities.Game;
+import com.gamelist.projections.GameMinProjection;
 
 public class GameMinDTO {
     private Long id;

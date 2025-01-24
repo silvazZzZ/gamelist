@@ -18,7 +18,6 @@ public class GameController {
     @Autowired
     private GameService gameService;
 
-
     @GetMapping(value = "{/id}")
     public GameDTO findByld (@PathVariable Long id) {
         GameDTO result = gameService.findById(id);
