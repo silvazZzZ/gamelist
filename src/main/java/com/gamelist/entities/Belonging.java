@@ -1,6 +1,7 @@
 package com.gamelist.entities;
 
 import jakarta.persistence.Embedded;
+import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 
@@ -10,7 +11,7 @@ import java.util.Objects;
 @Table(name = "tb_belonging")
 public class Belonging {
 
-    @Embedded
+    @EmbeddedId
     private BelongingPK id = new BelongingPK();
 
     private Integer position;
