@@ -2,24 +2,21 @@ package com.gamelist.dto;
 
 import com.gamelist.entities.GameList;
 
-public class GameListDTO {
+    public class GameListDTO {
 
-    private Long id;
-    private String name;
+        private Long id;
+        private String name;
 
-    public GameListDTO(){
+        public GameListDTO(GameList entity) {
+            id = entity.getId();
+            name = entity.getName();
+        }
+
+        public Long getId() {
+            return id;
+        }
+
+        public String getName() {
+            return name;
+        }
     }
-
-    public GameListDTO(GameList entity) {
-       id = entity.getId();
-        name = entity.getName();
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-}

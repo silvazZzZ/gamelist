@@ -43,4 +43,10 @@ public class GameListService {
         }
     }
 
+    @Transactional(readOnly = true)
+    public GameListDTO findById(Long id) {
+        GameList entity = gameListRepository.findById(id).get();
+        return new GameListDTO(entity);
+    }
+
 }

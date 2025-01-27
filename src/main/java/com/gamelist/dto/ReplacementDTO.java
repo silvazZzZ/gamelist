@@ -5,21 +5,20 @@ public class ReplacementDTO {
     private Integer sourceIndex;
     private Integer destinationIndex;
 
-    public Integer getDestinationIndex() {
-        return destinationIndex;
-    }
-
-    public ReplacementDTO setDestinationIndex(Integer destinationIndex) {
-        this.destinationIndex = destinationIndex;
-        return this;
-    }
-
     public Integer getSourceIndex() {
         return sourceIndex;
     }
 
-    public ReplacementDTO setSourceIndex(Integer sourceIndex) {
+    public void setSourceIndex(Integer sourceIndex) {
         this.sourceIndex = sourceIndex;
-        return this;
+    }
+
+    public Integer getDestinationIndex() {
+        return destinationIndex;
+    }
+
+    public void setDestinationIndex(Integer destinationIndex) {
+        this.destinationIndex = destinationIndex;
     }
 }
+

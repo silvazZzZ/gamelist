@@ -92,4 +92,3 @@ public class GameDTO {
         this.longDescription = longDescription;
     }
 }
-

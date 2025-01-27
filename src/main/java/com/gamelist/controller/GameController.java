@@ -15,11 +15,11 @@ import java.util.List;
 @RequestMapping(value = "/games")
 public class GameController {
 
-    @Autowired
+    @Autowired(required = false)
     private GameService gameService;
 
-    @GetMapping(value = "{/id}")
-    public GameDTO findByld (@PathVariable Long id) {
+    @GetMapping(value = "/{id}")
+    public GameDTO findById(@PathVariable Long id) {
         GameDTO result = gameService.findById(id);
         return result;
     }
@@ -30,3 +30,4 @@ public class GameController {
         return result;
     }
 }
+
